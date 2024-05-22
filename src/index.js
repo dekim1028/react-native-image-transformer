@@ -71,6 +71,8 @@ export default class ImageTransformer extends React.Component {
     this.renderError = this.renderError.bind(this);
     this.onOrientation = this.onOrientation.bind(this);
 
+    this.dimensionsSubscription = null;
+
     this.state = {
       viewWidth: 0,
       viewHeight: 0,
@@ -90,7 +92,10 @@ export default class ImageTransformer extends React.Component {
     this._mounted = true;
 
     // TO DO: Find better way to get initial states
-    Dimensions.addEventListener("change", this.onOrientation);
+    this.dimensionsSubscription = Dimensions.addEventListener(
+      "change",
+      this.onOrientation
+    );
     if (!this.state.source) {
       this.getImageSource(this.props.image);
     }
@@ -133,6 +138,9 @@ export default class ImageTransformer extends React.Component {
 
   componentWillUnmount() {
     Dimensions.removeEventListener("change", this.onOrientation);
+    if (this.dimensionsSubscription) {
+      this.dimensionsSubscription.remove();
+    }
     this._mounted = false;
   }
 
