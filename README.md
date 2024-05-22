@@ -6,11 +6,11 @@
     React Native Image Transformer
 </h1>
 
-An easy and simple to use React Native component to transform and translate an image with gestures like pan, pinch and double tap.  Supporting both iOS and Android. Free and made possible along with costly maintenance and updates by [Lue Hang](https://www.facebook.com/lue.hang) (the author).
+An easy and simple to use React Native component to transform and translate an image with gestures like pan, pinch and double tap. Supporting both iOS and Android. Free and made possible along with costly maintenance and updates by [Lue Hang](https://www.facebook.com/lue.hang) (the author).
 
 - Supports pinch, double tap or pull.
 - Includes guestures and important event listeners for pan, pinch, single tap and double tap.
-- Easy to use.  Just include an image path.
+- Easy to use. Just include an image path.
 - Supports local images.
 - Won't capture children's press.
 - Won't capture children's scroll, if children don't allow.
@@ -19,6 +19,7 @@ An easy and simple to use React Native component to transform and translate an i
 <br/>
 
 ---
+
 <br/>
 
 <h1 align="center">
@@ -31,6 +32,7 @@ An easy and simple to use React Native component to transform and translate an i
 <br/>
 
 # :link: Quick Links
+
 - [Documentation](https://www.luehangs.site/lue_hang/projects/react-native-image-transformer)
 - [Mobile Kit Marketplace](https://luehangs.site/marketplace/mobile-development)
 - [React Native Development How To Dos](https://luehangs.site/blogs/react-native-development)
@@ -39,6 +41,7 @@ An easy and simple to use React Native component to transform and translate an i
 <br/>
 
 ---
+
 <br/>
 
 # :gem: Install
@@ -60,13 +63,14 @@ $ yarn add react-native-image-transformer
 <br/>
 
 ---
+
 <br/>
 <br/>
 <br/>
 
 ## :tada: Usage Example
 
-Add an ``import`` to the top of the file.  At minimal, declare the ``ImageTransformer`` component in the ``render()`` method providing data in the ``image`` prop.
+Add an `import` to the top of the file. At minimal, declare the `ImageTransformer` component in the `render()` method providing data in the `image` prop.
 
 #### :information_source: Local images must have a defined `dimensions` field with `width` and `height` or just `height` and `width`.
 
@@ -113,6 +117,7 @@ render() {
 <br/>
 
 ---
+
 <br/>
 
 # :book: Full Documentation
@@ -124,6 +129,7 @@ render() {
 <br/>
 
 ---
+
 <br/>
 <br/>
 <br/>
@@ -141,6 +147,7 @@ Free and made possible along with costly maintenance and updates by [Lue Hang](h
 <br/>
 
 ---
+
 <br/>
 <br/>
 <br/>
