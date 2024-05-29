@@ -343,13 +343,14 @@ export default class ImageTransformer extends React.Component {
 
     if (width && height) {
       contentAspectRatio = width / height;
-      if (viewWidth && viewHeight) {
-        if (!maxScale) {
+
+      if (!maxScale) {
+        if (viewWidth && viewHeight) {
           resolvedMaxScale = Math.max(width / viewWidth, height / viewHeight);
           resolvedMaxScale = Math.max(1, resolvedMaxScale);
-        } else {
-          resolvedMaxScale = maxScale;
         }
+      } else {
+        resolvedMaxScale = maxScale;
       }
     }
 
